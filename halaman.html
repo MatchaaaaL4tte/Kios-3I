@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RasaNusantara</title>
+  <link rel="stylesheet" href="css uas.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo"><span class="brand-main">Kios</span><span class="brand-accent">3I</span></div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#mainMenu">Menu Utama</a>
+      <a href="#sideMenu">Menu Tambahan</a>
+      <a href="https://wa.me/6289696407241" target="_blank">pesan disini</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content fade-in">
+      <h1>Nikmati <span>Ayam Bakar Terlezat</span></h1>
+      <p>Dibakar dengan bumbu rempah pilihan, disajikan hangat khas RasaNusantara.</p>
+      <button id="learnMore">Lihat Menu</button>
+    </div>
+  </section>
+
+  <!-- ===== MENU UTAMA ===== -->
+  <section class="collections fade-in" id="mainMenu">
+    <h2>Menu Utama</h2>
+    <div class="gallery">
+      <div class="item"
+        data-name="Ayam Bakar Kecap"
+        data-desc="Ayam bakar dibalut bumbu kecap hitam pekat yang meresap manis gurih hingga ke dalam daging. Disajikan bersama nasi pulen hangat, sambal pedas yang enak dan gurih, serta pelengkap selada dan timun segar."
+        data-price="Rp28.000"
+        data-img="ayam bakar kecap.jpg">
+        <img src="ayam bakar kecap.jpg" alt="Ayam Bakar Kecap">
+        <p>Ayam Bakar Kecap</p>
+      </div>
+
+      <div class="item"
+        data-name="Ayam Bakar Barbeque"
+        data-desc="Ayam bakar lezat yang dilumuri saus barbeque yang kaya rasa. Disajikan dengan nasi yang pulen dan hangat, lengkap bersama sambel pedas yang enak dan gurih, serta kesegaran selada dan timun sebagai penyeimbang."
+        data-price="Rp30.000"
+        data-img="ayam bakar bbq.jpg">
+        <img src="ayam bakar bbq.jpg" alt="Ayam Bakar BBQ">
+        <p>Ayam Bakar BBQ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU TAMBAHAN ===== -->
+  <section class="collections fade-in" id="sideMenu">
+    <h2>Menu Tambahan</h2>
+    <div class="gallery">
+      <div class="item"
+        data-name="Tempe Goreng"
+        data-desc="Tempe goreng renyah gurih, cocok sebagai pendamping makan utama. Dibumbui dengan bawang dan ketumbar."
+        data-price="Rp2.000"
+        data-img="tempe2.jpeg">
+        <img src="tempe2.jpeg" alt="Tempe Goreng">
+        <p>Tempe Goreng</p>
+      </div>
+
+      <div class="item"
+        data-name="Tahu Crispy"
+        data-desc="Tahu goreng renyah di luar, lembut di dalam, dengan taburan bumbu pedas khas Nusantara."
+        data-price="Rp2.000"
+        data-img="tahu2.jpeg">
+        <img src="tahu2.jpeg" alt="Tahu Crispy">
+        <p>Tahu Crispy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POPUP MENU DETAIL ===== -->
+  <div class="menu-popup" id="menuPopup">
+    <div class="popup-content">
+      <img id="popupImg" src="" alt="Menu Gambar">
+      <h3 id="popupName"></h3>
+      <p id="popupDesc"></p>
+      <span id="popupPrice"></span>
+      <button id="closePopupBtn">Tutup</button>
+    </div>
+  </div>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Kios 3I. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="js uas.js"></script>
+</body>
+</html>
