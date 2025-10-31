@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RasaNusantara</title>
-  <link rel="stylesheet" href="css uas.css" />
+  <link rel="stylesheet" href="cssuas.css" />
 </head>
 <body>
 
@@ -15,7 +15,7 @@
       <a href="#home">Home</a>
       <a href="#mainMenu">Menu Utama</a>
       <a href="#sideMenu">Menu Tambahan</a>
-      <a href="https://wa.me/6289696407241" target="_blank">pesan disini</a>
+      <a href="#Form Pemesanan" target="_blank">pesan disini</a>
     </nav>
   </header>
 
@@ -86,11 +86,52 @@
       <button id="closePopupBtn">Tutup</button>
     </div>
   </div>
+      <!-- ===== FORM PEMESANAN ===== -->
+  <section class="rebumi fade-in" id="Form Pemesanan">
+    <h2>Form Pemesanan</h2>
+
+    <form id="orderForm" class="order-form">
+      <!-- Data Diri -->
+      <label for="name">Nama:</label>
+      <input type="text" id="name" placeholder="Masukkan nama Anda" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Masukkan email Anda" required />
+
+      <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+
+      <!-- Daftar Menu -->
+      <div id="menuList">
+        <div class="menu-item">
+          <select class="menuSelect" required>
+            <option value="">-- Pilih Menu --</option>
+            <option value="Ayam Bakar Kecap" data-price="28000">Ayam Bakar Kecap - Rp28.000</option>
+            <option value="Ayam Bakar Barbeque" data-price="30000">Ayam Bakar BBQ - Rp30.000</option>
+            <option value="Tempe Goreng" data-price="7000">Tempe Goreng - Rp2.000</option>
+            <option value="Tahu Crispy" data-price="6000">Tahu Crispy - Rp2.000</option>
+          </select>
+
+          <input type="number" class="quantity" placeholder="Jumlah" min="1" value="1" />
+          <input type="text" class="note" placeholder="Catatan tambahan (opsional)" />
+          <button type="button" class="removeMenu">Hapus</button>
+        </div>
+      </div>
+
+      <button type="button" id="addMenu">+ Tambah Menu</button>
+
+      <div class="total-box">
+        Total Harga: <span id="totalPrice">Rp0</span>
+      </div>
+
+      <button type="submit">Kirim Pesanan ke WhatsApp</button>
+    </form>
+  </section>
+
   <!-- ===== FOOTER ===== -->
   <footer>
     <p>© 2025 Kios 3I. Semua hak dilindungi.</p>
   </footer>
 
-  <script src="js uas.js"></script>
+  <script src="jsuas.js"></script>
 </body>
 </html>
